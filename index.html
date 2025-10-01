@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Romero | Computer Science Student</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid #667eea;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            border: 2px solid #667eea;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .about-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #764ba2;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateX(5px);
+        }
+
+        .project-card h3 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .project-meta {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .project-highlights {
+            margin-top: 15px;
+        }
+
+        .project-highlights li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-category h3 {
+            color: #764ba2;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #764ba2;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 25px;
+            }
+
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://github.com/Lrome1019.png" alt="Laura Romero" class="profile-img">
+            <h1>Laura Romero</h1>
+            <p class="tagline">Computer Science Student | Data Analytics & AI</p>
+            <p style="color: #888; max-width: 600px; margin: 0 auto;">
+                Building accessible tech solutions and empowering diverse communities through technology
+            </p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/laura-ofelia-romero1111" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Lrome1019" target="_blank">GitHub</a>
+                <a href="mailto:laura.romero.lg@gmail.com">Email</a>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>About Me</h2>
+            <p class="about-text">
+                I'm an undergraduate student at Ball State University specializing in Data Analytics & AI, graduating May 2028. 
+                I'm passionate about leveraging technology to create accessible solutions and drive positive social impact.
+            </p>
+            <p class="about-text" style="margin-top: 15px;">
+                With years of experience supporting my family's landscaping business, I bring practical business operations expertise 
+                to my technical work - from managing spreadsheets and financial documents to streamlining project workflows. I love 
+                helping businesses and entrepreneurs leverage technology and AI tools to work smarter and grow sustainably.
+            </p>
+            <p class="about-text" style="margin-top: 15px;">
+                As a nationally recognized epilepsy advocate, I'm committed to building inclusive spaces where people from all 
+                backgrounds can explore emerging technology. Bilingual in English and Spanish, I bring together technical skills 
+                with a people-first, business-minded approach to problem-solving.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Featured Projects</h2>
+            
+            <div class="project-card">
+                <h3>Enterprise Software Deployment</h3>
+                <p class="project-meta">Mallcomm - CenterLink Platform | January 2025 - Present</p>
+                <p>Led the deployment and adoption of an enterprise property management platform across multiple major shopping centers, successfully onboarding 370+ retail locations.</p>
+                <ul class="project-highlights">
+                    <li><strong>100% completion rate</strong> across all deployments</li>
+                    <li>Managed user authentication and access controls for hundreds of businesses</li>
+                    <li>Designed scalable data tracking systems for monitoring adoption and engagement</li>
+                    <li>Provided real-time technical support and troubleshooting</li>
+                    <li>Created replicable onboarding processes for non-technical users</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>Skills:</strong> Project Management, Technical Training, Data Management, User Authentication, Problem-Solving</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Manos Unidas: Latino Small Business Research Project</h3>
+                <p class="project-meta">Ball State Entrepreneurial Institute | Community Research</p>
+                <p>Conducted qualitative and quantitative research examining barriers faced by Latino-owned small businesses in the local community. Analyzed resource accessibility and identified critical needs through data collection and community engagement.</p>
+                <ul class="project-highlights">
+                    <li>Gathered and analyzed qualitative and quantitative data on business resource gaps</li>
+                    <li>Identified key barriers affecting Latino entrepreneurs</li>
+                    <li>Developed recommendations for community support programs</li>
+                    <li>Collaborated with Manos Unidas Latino Community Alliance</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>Skills:</strong> Qualitative & Quantitative Research, Data Analysis, Community Engagement, Business Analysis</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Pediatric to Adult Neurology Transition Toolkit - Spanish Translation</h3>
+                <p class="project-meta">Child Neurology Foundation | Healthcare Accessibility</p>
+                <p>Collaborated with the Child Neurology Foundation to translate critical healthcare resources, making the Pediatric to Adult Neurology Transition Toolkit accessible to Spanish-speaking families and patients.</p>
+                <p style="margin-top: 10px;"><strong>Impact:</strong> Increased healthcare accessibility for Spanish-speaking families navigating complex medical transitions</p>
+                <p style="margin-top: 10px;"><strong>Skills:</strong> Spanish Translation, Healthcare Communication, Community Advocacy</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Savings Calculator Application</h3>
+                <p class="project-meta">Java | Personal Project</p>
+                <p>Developed an object-oriented Java application implementing financial calculations and user input validation for practical financial planning.</p>
+                <p style="margin-top: 10px;"><strong>Skills:</strong> Java, Object-Oriented Programming, Financial Logic</p>
+                <a href="https://github.com/Lrome1019" target="_blank" class="cta-button" style="font-size: 0.9em; padding: 10px 20px;">View on GitHub</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">Java</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div>
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">R Studio</span>
+                        <span class="skill-tag">Enterprise Software</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Core Competencies</h3>
+                    <div>
+                        <span class="skill-tag">Data Management</span>
+                        <span class="skill-tag">Project Management</span>
+                        <span class="skill-tag">Technical Training</span>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 30px; color: #764ba2;">Certifications</h3>
+            <p style="margin-top: 10px;">
+                • Google Project Management (Coursera)<br>
+                • Databricks Generative AI Fundamentals<br>
+                • Maven Academy Building A Business with AI
+            </p>
+        </section>
+
+        <section class="section" style="text-align: center;">
+            <h2>Let's Connect</h2>
+            <p style="font-size: 1.1em; color: #555; margin-bottom: 20px;">
+                I'm always open to new opportunities, collaborations, and conversations about technology and community impact.
+            </p>
+            <a href="mailto:laura.romero.lg@gmail.com" class="cta-button">Get In Touch</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Laura Romero. Built with determination and a little help from Claude. 💜</p>
+        </footer>
+    </div>
+</body>
+</html>
